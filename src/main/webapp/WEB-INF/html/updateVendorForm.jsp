@@ -24,8 +24,8 @@
                    <form:input type="text" class="form-control" id="vendorId" placeholder="Enter vendor id" name="vendorName" path="id"/><form:errors path="id" style="color:red"/><br>
                 </div>
                 <div class="form-group">
-                    <form:label path="name">New vendor name:</form:label><br>
-                    <form:input type="text" class="form-control" id="vendorName" placeholder="Enter vendor new name" name="vendorName" path="name"/><form:errors path="name" style="color:red"/><br>
+                    <form:label path="name">Vendor name:</form:label><br>
+                    <form:input type="text" class="form-control" id="vendorName" placeholder="Enter new vendor name" name="vendorName" path="name"/><form:errors path="name" style="color:red"/><br>
                 </div>
                     <input type="submit" value="Submit"/>
            </form:form>

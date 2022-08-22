@@ -12,7 +12,7 @@
         <div class="container">
             <form action="/vendors/name/">
                  <div class="form-group">
-                    <label for="name">Vendor name:</label><br>
+                    <label for="name">Find vendor by name:</label><br>
                     <input type="text" class="form-control" id="name" placeholder="Enter vendor name" name="vendorName"><br>
                  </div>
                      <input type="submit" value="Submit">
