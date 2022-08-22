@@ -1,6 +1,5 @@
 package ua.goit.model.dto;
 
-import java.util.Set;
 import java.util.UUID;
 
 public class VendorDto {
@@ -38,11 +37,4 @@ public class VendorDto {
                 "," + name;
     }
 
-//    public Set<ProductDto> getProducts() {
-//        return products;
-//    }
-//
-//    public void setProducts(Set<ProductDto> products) {
-//        this.products = products;
-//    }
 }

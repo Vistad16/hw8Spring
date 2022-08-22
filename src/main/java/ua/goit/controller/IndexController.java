@@ -23,7 +23,7 @@ public class IndexController {
     @GetMapping("/login")
     public String login(Model model, String error, String logout) {
         if (error != null) {
-            model.addAttribute("error", "Your username or password is invalid");
+            model.addAttribute("error", "You entered an incorrect login or password");
         }
 
         if (logout != null) {
