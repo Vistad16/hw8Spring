@@ -3,6 +3,7 @@
 #### Work with java 11 and 17
 #### /resources/application.properties, change url, log, pass to DB
 # --
+#### The deployed project is [here](https://retro-pm.herokuapp.com/login?logout)
 #### Log in like admin
 #### login:    admin@admin.com
 #### password: admin
