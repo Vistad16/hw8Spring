@@ -12,7 +12,7 @@
         <div class="container">
             <form action="/users/name/">
                  <div class="form-group">
-                    <label for="email">Vendor name:</label><br>
+                    <label for="email">Enter user email:</label><br>
                     <input type="text" class="form-control" id="email" placeholder="Enter email" name="email"><br>
                  </div>
                      <input type="submit" value="Submit">

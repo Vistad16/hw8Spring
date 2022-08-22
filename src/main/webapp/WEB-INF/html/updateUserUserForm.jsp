@@ -20,8 +20,8 @@
         <div class="container">
             <form:form action="/users/update/user" method="post" modelAttribute="userForm">
                 <div class="form-group">
-                   <form:label path="id">User id:</form:label><br>
-                   <form:input type="text" class="form-control" id="userId" placeholder="Enter user id" name="userId" path="id"/><form:errors path="id" style="color:red"/><br>
+                   <form:label path="id">Enter user ID:</form:label><br>
+                   <form:input type="text" class="form-control" id="userId" placeholder="Enter user ID" name="userId" path="id"/><form:errors path="id" style="color:red"/><br>
                 </div>
 
                     <input type="submit" value="User"/>
