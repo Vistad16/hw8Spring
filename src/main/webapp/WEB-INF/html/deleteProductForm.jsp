@@ -12,21 +12,10 @@
     <body>
         <c:import url="${contextPath}/WEB-INF/html/navibar.jsp"/>
         <div class="container">
-            <form:form action="/products/" method="post" modelAttribute="productDto">
+           <form:form action="/products/delete" method="delete" modelAttribute="productDto">
                 <div class="form-group">
-                    <form:label path="name">Product name:</form:label><br>
+                    <form:label path="name">Product name you want to delete:</form:label><br>
                     <form:input type="text" class="form-control" id="productName" placeholder="Enter product name" name="productName" path="name"/><form:errors path="name" style="color:red"/><br>
-                    <form:label path="price">Price:</form:label><br>
-                    <form:input type="text" class="form-control" id="price" placeholder="42.14" name="price" path="price"/><form:errors path="price" style="color:red"/><br>
-                    <spring:bind path="vendor">Select vendord:
-                    <select class="form-control" id="vendor" name="vendor">
-                        <c:forEach items="${vendors}" var="vendor">
-                            <option value="${vendor}">
-                                <c:out value="${vendor.name}"/><br>
-                            </option>
-                        </c:forEach>
-                    </select>
-                    </spring:bind>
                 </div>
                     <input type="submit" value="Submit"/>
            </form:form>
