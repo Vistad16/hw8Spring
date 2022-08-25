@@ -20,11 +20,12 @@
         <div class="container">
             <form:form action="/users/update/user" method="post" modelAttribute="userForm">
                 <div class="form-group">
-                   <form:label path="id">Enter id:</form:label><br>
+                    <h2>Update admin to user</h2>
+                    <form:label path="id">Enter id:</form:label><br>
                    <form:input type="text" class="form-control" id="userId" placeholder="Enter user id" name="userId" path="id"/><form:errors path="id" style="color:red"/><br>
                 </div>
 
-                    <input type="submit" value="User"/>
+                    <input type="submit" value="Update"/>
            </form:form>
             <c:if test="${not empty errorMessage}">
               <c:forEach items="${errorMessage.errors}" var="error">

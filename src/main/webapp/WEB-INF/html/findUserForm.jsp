@@ -12,6 +12,7 @@
         <div class="container">
             <form action="/users/name/">
                 <div class="form-group">
+                    <h2>Find by email</h2>
                     <label for="email">User email:</label><br>
                     <input type="text" class="form-control" id="email" placeholder="Enter user email" name="email"><br>
                 </div>
