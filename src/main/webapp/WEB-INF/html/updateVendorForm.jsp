@@ -20,6 +20,7 @@
         <div class="container">
             <form:form action="/vendors/update" method="put" modelAttribute="vendorDto">
                 <div class="form-group">
+                    <h2>Update vendor</h2>
                    <form:label path="id">Vendor id:</form:label><br>
                    <form:input type="text" class="form-control" id="vendorId" placeholder="Enter vendor id" name="vendorName" path="id"/><form:errors path="id" style="color:red"/><br>
                 </div>

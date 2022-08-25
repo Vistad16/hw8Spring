@@ -12,6 +12,7 @@
         <div class="container">
             <form action="/vendors/name/">
                 <div class="form-group">
+                    <h2>Find by name</h2>
                     <label for="name">Find vendor by name:</label><br>
                     <input type="text" class="form-control" id="vendorName" placeholder="Enter vendor name" name="name"><br>
                 </div>

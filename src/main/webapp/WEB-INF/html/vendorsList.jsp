@@ -10,8 +10,9 @@
     <body>
         <c:import url="${contextPath}/WEB-INF/html/navibar.jsp"/>
         <div class="container">
-              <table class="table table-hover">
+            <table class="table table-hover">
                       <thead>
+                      <h2>Vendors list</h2>
                       <tr>
                           <td>Vendor name</td>
                           <td>id</td>

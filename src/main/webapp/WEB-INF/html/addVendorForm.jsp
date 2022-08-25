@@ -14,6 +14,7 @@
         <div class="container">
             <form:form action="/vendors/" method="post" modelAttribute="vendorDto">
                 <div class="form-group">
+                    <h2>Add new vendor</h2>
                     <form:label path="name">Vendor name:</form:label><br>
                     <form:input type="text" class="form-control" id="vendorName" placeholder="Enter vendor name" name="vendorName" path="name"/><form:errors path="name" style="color:red"/><br>
                 </div>
