@@ -10,7 +10,7 @@ import java.util.UUID;
 public class VendorDao {
     private UUID id;
     private String name;
-//    private Set<ProductDao> products;
+    private Set<ProductDao> products;
 
     public VendorDao() {
     }

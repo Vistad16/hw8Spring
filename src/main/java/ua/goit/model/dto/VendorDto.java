@@ -1,11 +1,12 @@
 package ua.goit.model.dto;
 
+import java.util.Set;
 import java.util.UUID;
 
 public class VendorDto {
     private UUID id;
     private String name;
-//    private Set<ProductDto> products;
+    private Set<ProductDto> products;
 
     public VendorDto() {
     }
