@@ -29,7 +29,7 @@
                     </select>
                     </spring:bind>
                 </div>
-                    <input type="submit" value="Submit"/>
+                    <input type="submit" value="Add"/>
            </form:form>
             <c:if test="${not empty errorMessage}">
               <c:forEach items="${errorMessage.errors}" var="error">

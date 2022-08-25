@@ -28,7 +28,7 @@
                     <form:label path="name">Vendor name:</form:label><br>
                     <form:input type="text" class="form-control" id="vendorName" placeholder="Enter new vendor name" name="vendorName" path="name"/><form:errors path="name" style="color:red"/><br>
                 </div>
-                    <input type="submit" value="Submit"/>
+                    <input type="submit" value="Update"/>
            </form:form>
             <c:if test="${not empty errorMessage}">
               <c:forEach items="${errorMessage.errors}" var="error">

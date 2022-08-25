@@ -16,7 +16,7 @@
                     <label for="email">User email:</label><br>
                     <input type="text" class="form-control" id="email" placeholder="Enter user email" name="email"><br>
                 </div>
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Find">
             </form>
         </div>
     </body>

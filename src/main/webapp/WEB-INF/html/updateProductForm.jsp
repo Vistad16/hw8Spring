@@ -32,7 +32,7 @@
                     <form:label path="price">Product price:</form:label><br>
                     <form:input type="text" class="form-control" id="productPrice" placeholder="Enter new price" name="productPrice" path="price"/><form:errors path="price" style="color:red"/><br>
                 </div>
-                    <input type="submit" value="Submit"/>
+                    <input type="submit" value="Update"/>
            </form:form>
             <c:if test="${not empty errorMessage}">
               <c:forEach items="${errorMessage.errors}" var="error">

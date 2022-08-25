@@ -16,7 +16,7 @@
                     <label for="name">Find vendor by name:</label><br>
                     <input type="text" class="form-control" id="name" placeholder="Enter vendor name" name="vendorName"><br>
                  </div>
-                     <input type="submit" value="Submit">
+                     <input type="submit" value="Find">
             </form>
                 <table class="table table-hover">
                       <thead>

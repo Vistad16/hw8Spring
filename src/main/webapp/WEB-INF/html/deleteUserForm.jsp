@@ -18,7 +18,7 @@
                     <form:label path="id">Enter user id you want to delete:</form:label><br>
                     <form:input type="text" class="form-control" id="id" placeholder="Enter id" name="id" path="id"/><form:errors path="id" style="color:red"/><br>
                 </div>
-                    <input type="submit" value="Submit"/>
+                    <input type="submit" value="Delete"/>
            </form:form>
             <c:if test="${not empty errorMessage}">
               <c:forEach items="${errorMessage.errors}" var="error">
