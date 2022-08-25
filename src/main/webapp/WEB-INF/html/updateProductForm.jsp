@@ -20,6 +20,7 @@
         <div class="container">
             <form:form action="/products/update" method="put" modelAttribute="productDto">
                 <div class="form-group">
+                    <h2>Update product</h2>
                    <form:label path="id">Product id:</form:label><br>
                    <form:input type="text" class="form-control" id="productId" placeholder="Enter product id" name="productId" path="id"/><form:errors path="id" style="color:red"/><br>
                 </div>

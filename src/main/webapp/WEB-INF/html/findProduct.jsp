@@ -12,6 +12,7 @@
         <div class="container">
               <table class="table table-hover">
                       <thead>
+                      <h2>Find by name</h2>
                       <tr>
                           <td>id</td>
                           <td>Name</td>

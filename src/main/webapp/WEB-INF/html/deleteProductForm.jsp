@@ -14,6 +14,7 @@
         <div class="container">
            <form:form action="/products/delete" method="delete" modelAttribute="productDto">
                 <div class="form-group">
+                    <h2>Delete product</h2>
                     <form:label path="name">Enter name of the product you want to delete:</form:label><br>
                     <form:input type="text" class="form-control" id="productName" placeholder="Enter product name" name="productName" path="name"/><form:errors path="name" style="color:red"/><br>
                 </div>
