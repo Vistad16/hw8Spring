@@ -16,7 +16,7 @@
                 <div class="form-group">
                     <form:label path="name">Product name:</form:label><br>
                     <form:input type="text" class="form-control" id="productName" placeholder="Enter product name" name="productName" path="name"/><form:errors path="name" style="color:red"/><br>
-                    <form:label path="price">Price:</form:label><br>
+                    <form:label path="price">Product price:</form:label><br>
                     <form:input type="text" class="form-control" id="price" placeholder="42.14" name="price" path="price"/><form:errors path="price" style="color:red"/><br>
                     <spring:bind path="vendor">Select vendord:
                     <select class="form-control" id="vendor" name="vendor">
