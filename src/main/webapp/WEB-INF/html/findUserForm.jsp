@@ -12,8 +12,8 @@
         <div class="container">
             <form action="/users/name/">
                 <div class="form-group">
-                    <label for="email">Enter user email:</label><br>
-                    <input type="text" class="form-control" id="email" placeholder="Enter email" name="email"><br>
+                    <label for="email">User email:</label><br>
+                    <input type="text" class="form-control" id="email" placeholder="Enter user email" name="email"><br>
                 </div>
                     <input type="submit" value="Submit">
             </form>
