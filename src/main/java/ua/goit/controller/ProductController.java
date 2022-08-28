@@ -50,7 +50,7 @@ public class ProductController {
     }
 
     @GetMapping(path = "/form/update")
-//    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public String getProductUpdateForm() {
         return "updateProductForm";
     }
@@ -63,7 +63,7 @@ public class ProductController {
     }
 
     @GetMapping(path = "/form/add")
-//    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public String getNewProductFrom(Model model) {
         List<VendorDto> vendors = vendorService.findAll();
         model.addAttribute("vendors", vendors);
@@ -71,7 +71,7 @@ public class ProductController {
     }
 
     @PostMapping(path = "/delete")
-//    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ModelAndView deleteProduct(@ModelAttribute("productDto") @Valid ProductDto productDto, BindingResult bindingResult,
                                       ModelAndView model) {
         if (bindingResult.hasErrors()) {
@@ -85,7 +85,7 @@ public class ProductController {
     }
 
     @PostMapping(path = "/update")
-//    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ModelAndView updateProduct(@ModelAttribute("productDto") @Valid ProductDto productDto, BindingResult bindingResult,
                                       ModelAndView model) {
         if (bindingResult.hasErrors()) {

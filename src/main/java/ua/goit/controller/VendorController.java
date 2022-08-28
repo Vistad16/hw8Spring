@@ -38,19 +38,19 @@ public class VendorController {
     }
 
     @GetMapping(path = "/form/add")
-//    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public String getNewVendorFrom(Model model) {
         return "addVendorForm";
     }
 
     @GetMapping(path = "/form/update")
-//    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public String getVendorUpdateForm() {
         return "updateVendorForm";
     }
 
     @GetMapping(path = "/form/delete")
-//    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public String getVendorDeleteForm() {
         return "deleteVendorForm";
     }
@@ -63,7 +63,7 @@ public class VendorController {
     }
 
     @PostMapping(path = "/update")
-//    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ModelAndView updateVendor(@ModelAttribute("vendorDto") @Valid VendorDto vendorDto, BindingResult bindingResult,
                                      ModelAndView model) {
         if (bindingResult.hasErrors()) {
@@ -92,7 +92,7 @@ public class VendorController {
     }
 
     @PostMapping(path = "/delete")
-//    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ModelAndView deleteVendor(@ModelAttribute("vendorDto") @Valid VendorDto vendorDto, BindingResult bindingResult,
                                      ModelAndView model) {
         if (bindingResult.hasErrors()) {

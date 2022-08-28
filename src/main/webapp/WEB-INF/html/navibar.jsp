@@ -11,18 +11,22 @@
                     <ul class="dropdown-menu">
                     <li><a href="/vendors/all">Show all</a></li>
                       <li><a href="/vendors/form/find">Find by name</a></li>
+                        <security:authorize access="hasRole('ROLE_ADMIN')">
                       <li><a href="/vendors/form/add">Add new</a></li>
                       <li><a href="/vendors/form/update">Update</a></li>
                       <li><a href="/vendors/form/delete">Delete</a></li>
+                        </security:authorize>
                     </ul>
                   </li>
                   <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Products <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                          <li><a href="/products/all">Show all</a></li>
                          <li><a href="/products/form/find">Find by name</a></li>
+                        <security:authorize access="hasRole('ROLE_ADMIN')">
                          <li><a href="/products/form/add">Add new</a></li>
                          <li><a href="/products/form/update">Update</a></li>
                          <li><a href="/products/form/delete">Delete</a></li>
+                        </security:authorize>
                     </ul>
                   </li>
                 <security:authorize access="hasRole('ROLE_ADMIN')">
